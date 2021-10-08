@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<title>Gallary</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="black logo.png"></a>
+
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="albume.html">Gallery</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+<!----------------------------------------------------------------------------imag-area---------------------------------------------------------------------------->
+<div class="img-area">
+  <div class="box">
+    <span style="--i:1"><img src="house.jpg" class="img-fluid"></span>
+    <span style="--i:2"><img src="background.jpg" class="img-fluid"></span>
+    <span style="--i:3"><img src="games.jpg"class="img-fluid"></span>
+    <span style="--i:4"><img src="wasington.jpg"class="img-fluid"></span>
+    <span style="--i:5"><img src="libary.jpeg"class="img-fluid"></span>
+    <span style="--i:6"><img src="London.jpg "class="img-fluid"></span>
+    <span style="--i:8"><img src="new york.jpeg"class="img-fluid"></span>
+    <span style="--i:9"><img src="wasington.jpg"class="img-fluid"></span>
+    <span style="--i:10"><img src="personal.png "class="img-fluid"></span>
+  </div>
+  </div>
+</section>
+<!------------------------------------------------------------javascript for toggle menu------------------------------------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  var navlinks = document.getElementById("navlinks");
+  function showmenu(){
+      navlinks.style.right ="0";
+  }
+  function hidemenu(){
+      navlinks.style.right ="-200px";
+  }
+  </script>
+</body>
+</html>

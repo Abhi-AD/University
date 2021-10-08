@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University website </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ </head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="black logo.png"></a>
+
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="albume.html">Gallery</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <section class="contact">
+            <div class="content">
+                <h2>World's Biggest University</h2>
+            <p>Making website now one the easiest thong in the easiest thing in the world. You just need to learn HTML, CSS,
+                Javascript and you are good to go.</p>
+                <a href="index.html" class="hero-btn">Visit Us To Know More</a>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icons"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>E - W Hwy, Lamahi 22414</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>9822946156</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>dangiabhi332@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactForm">
+                <form>
+                    <h2>Send message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputBox">
+                     <a href="contact.html"> <input type="submit" name="" value="sent"></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!------------------------------------------------------------javascript for toggle menu------------------------------------------------------------------------->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right ="0";
+        }
+        function hidemenu(){
+            navlinks.style.right ="-200px";
+        }
+        </script>
+    </body>
+    </html>
